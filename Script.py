@@ -2,13 +2,13 @@ from Bio import Entrez
 import pandas as pd
 import time
 
-# Set your email (mandatory)
+
 Entrez.email = "setyourmail@gmail.com"  # Replace with your actual email if needed
 
 # Optional: Add your NCBI API key for higher request limits
-# Entrez.api_key = "your_ncbi_api_key"
 
-# Search terms based on your query
+
+# Search terms based  query
 search_terms = [
     "Machine Learning in xxxxx",
     "Deep Learning in xxxxxxx",
@@ -56,4 +56,5 @@ for term in search_terms:
 df = pd.DataFrame(all_articles)
 df.to_excel("file.xlsx", index=False)
 
-print("✅ Done! Articles saved to 'file.xlsx'")
+
+print(" Done!! Articles saved to 'file.xlsx'")
